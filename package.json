@@ -1,0 +1,14 @@
+{
+  "name": "reminders-kanban",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build:cli": "bash scripts/build-cli.sh",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "npm run build:cli && npm run dev",
+    "setup": "bash scripts/setup.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
