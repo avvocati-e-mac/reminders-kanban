@@ -1,0 +1,41 @@
+{
+  "id": "comparsa-risposta-lavoro",
+  "nome": "Comparsa di risposta (rito del lavoro)",
+  "descrizione": "Art. 416 c.p.c. — memoria difensiva nel rito lavoro",
+  "triggerLabel": "Data udienza di discussione",
+  "triggerKey": "data_udienza",
+  "subtasks": [
+    {
+      "id": "st_01",
+      "titolo": "Deposito memoria difensiva del convenuto",
+      "giorni": -10,
+      "tipo": "libero",
+      "ancora": "data_udienza",
+      "note": "Art. 416 c.p.c. — almeno 10 giorni prima dell'udienza. Contestazione dei fatti, eccezioni, domande riconvenzionali."
+    },
+    {
+      "id": "st_02",
+      "titolo": "Allegazione documenti e deposito fascicolo",
+      "giorni": -10,
+      "tipo": "libero",
+      "ancora": "data_udienza",
+      "note": "I documenti vanno depositati insieme alla memoria difensiva (art. 416 co. 3 c.p.c.)"
+    },
+    {
+      "id": "st_03",
+      "titolo": "Verifica ricevuta notifica ricorso e decreto",
+      "giorni": -30,
+      "tipo": "libero",
+      "ancora": "data_udienza",
+      "note": "Art. 415 c.p.c. — il ricorso deve essere notificato almeno 30 giorni prima dell'udienza (rito ordinario)"
+    },
+    {
+      "id": "st_04",
+      "titolo": "Udienza di discussione",
+      "giorni": 0,
+      "tipo": "libero",
+      "ancora": "data_udienza",
+      "note": "Art. 420 c.p.c. — il giudice tenta conciliazione, ammette prove, fissa eventuale udienza istruttoria"
+    }
+  ]
+}

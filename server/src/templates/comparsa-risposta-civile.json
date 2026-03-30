@@ -1,0 +1,41 @@
+{
+  "id": "comparsa-risposta-civile",
+  "nome": "Comparsa di risposta (rito civile ordinario)",
+  "descrizione": "Art. 166 c.p.c. — Riforma Cartabia (D.Lgs. 149/2022)",
+  "triggerLabel": "Data prima udienza di trattazione",
+  "triggerKey": "data_udienza",
+  "subtasks": [
+    {
+      "id": "st_01",
+      "titolo": "Verifica competenza e giurisdizione",
+      "giorni": -90,
+      "tipo": "processuale",
+      "ancora": "data_udienza",
+      "note": "Art. 38 c.p.c. — eccezione di incompetenza da proporre a pena di decadenza"
+    },
+    {
+      "id": "st_02",
+      "titolo": "Deposito comparsa di risposta",
+      "giorni": -70,
+      "tipo": "processuale",
+      "ancora": "data_udienza",
+      "note": "Art. 166 c.p.c. — 70 giorni prima dell'udienza di prima comparizione"
+    },
+    {
+      "id": "st_03",
+      "titolo": "Verifica deposito memoria integrativa (se ammessa)",
+      "giorni": -40,
+      "tipo": "processuale",
+      "ancora": "data_udienza",
+      "note": "Art. 171-ter n. 2 c.p.c. — seconda memoria: precisare o modificare domande"
+    },
+    {
+      "id": "st_04",
+      "titolo": "Udienza di prima comparizione e trattazione",
+      "giorni": 0,
+      "tipo": "libero",
+      "ancora": "data_udienza",
+      "note": "Art. 183 c.p.c. — il giudice fissa i termini per le memorie ex art. 171-ter"
+    }
+  ]
+}

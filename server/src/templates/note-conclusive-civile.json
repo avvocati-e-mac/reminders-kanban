@@ -1,0 +1,33 @@
+{
+  "id": "note-conclusive-civile",
+  "nome": "Note conclusive e repliche (decisione civile)",
+  "descrizione": "Art. 189/190 c.p.c. — rimessione in decisione con concessione termini",
+  "triggerLabel": "Data udienza di rimessione in decisione",
+  "triggerKey": "data_rimessione",
+  "subtasks": [
+    {
+      "id": "st_01",
+      "titolo": "Udienza di precisazione delle conclusioni / rimessione in decisione",
+      "giorni": 0,
+      "tipo": "libero",
+      "ancora": "data_rimessione",
+      "note": "Art. 189 c.p.c. — il giudice assegna i termini per comparse conclusionali e repliche"
+    },
+    {
+      "id": "st_02",
+      "titolo": "Deposito comparse conclusionali",
+      "giorni": 60,
+      "tipo": "processuale",
+      "ancora": "data_rimessione",
+      "note": "Art. 190 co. 1 c.p.c. — 60 giorni dalla rimessione in decisione"
+    },
+    {
+      "id": "st_03",
+      "titolo": "Deposito memorie di replica",
+      "giorni": 80,
+      "tipo": "processuale",
+      "ancora": "data_rimessione",
+      "note": "Art. 190 co. 1 c.p.c. — ulteriori 20 giorni dopo le comparse conclusionali (totale 80)"
+    }
+  ]
+}

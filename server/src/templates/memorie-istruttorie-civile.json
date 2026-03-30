@@ -1,0 +1,41 @@
+{
+  "id": "memorie-istruttorie-civile",
+  "nome": "Memorie istruttorie (rito civile — Riforma Cartabia)",
+  "descrizione": "Art. 171-ter c.p.c. — tre memorie prima dell'udienza di trattazione",
+  "triggerLabel": "Data udienza di trattazione (art. 183 c.p.c.)",
+  "triggerKey": "data_udienza",
+  "subtasks": [
+    {
+      "id": "st_01",
+      "titolo": "Prima memoria — modifiche a domande ed eccezioni",
+      "giorni": -40,
+      "tipo": "processuale",
+      "ancora": "data_udienza",
+      "note": "Art. 171-ter n. 1 c.p.c. — deposito 40 giorni prima udienza. Proporre domande/eccezioni nuove ammissibili."
+    },
+    {
+      "id": "st_02",
+      "titolo": "Seconda memoria — istanze istruttorie e produzioni documentali",
+      "giorni": -20,
+      "tipo": "processuale",
+      "ancora": "data_udienza",
+      "note": "Art. 171-ter n. 2 c.p.c. — deposito 20 giorni prima udienza. Capitoli prova per testi, CTU, produzioni."
+    },
+    {
+      "id": "st_03",
+      "titolo": "Terza memoria — repliche alle istanze avversarie",
+      "giorni": -10,
+      "tipo": "processuale",
+      "ancora": "data_udienza",
+      "note": "Art. 171-ter n. 3 c.p.c. — deposito 10 giorni prima udienza. Solo replica alle istanze istruttorie avversarie."
+    },
+    {
+      "id": "st_04",
+      "titolo": "Udienza di trattazione",
+      "giorni": 0,
+      "tipo": "libero",
+      "ancora": "data_udienza",
+      "note": "Il giudice ammette le prove e fissa udienza istruttoria o rimette in decisione"
+    }
+  ]
+}

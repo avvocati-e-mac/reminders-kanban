@@ -1,0 +1,49 @@
+{
+  "id": "esecuzione-presso-terzi",
+  "nome": "Esecuzione presso terzi (pignoramento crediti)",
+  "descrizione": "Art. 543 ss. c.p.c. — pignoramento di crediti del debitore verso terzi (es. stipendio, c/c bancario)",
+  "triggerLabel": "Data notifica atto di pignoramento al terzo",
+  "triggerKey": "data_pignoramento",
+  "subtasks": [
+    {
+      "id": "st_01",
+      "titolo": "Notifica atto di pignoramento a debitore e terzo",
+      "giorni": 0,
+      "tipo": "libero",
+      "ancora": "data_pignoramento",
+      "note": "Art. 543 c.p.c. — notifica contestuale a debitore e terzo pignorato (banca, datore di lavoro)"
+    },
+    {
+      "id": "st_02",
+      "titolo": "Iscrizione a ruolo presso il Tribunale",
+      "giorni": 30,
+      "tipo": "libero",
+      "ancora": "data_pignoramento",
+      "note": "Art. 543 co. 4 c.p.c. — deposito entro 30 giorni dalla notifica, pena inefficacia del pignoramento"
+    },
+    {
+      "id": "st_03",
+      "titolo": "Dichiarazione del terzo (termine)",
+      "giorni": 40,
+      "tipo": "libero",
+      "ancora": "data_pignoramento",
+      "note": "Art. 547 c.p.c. — il terzo deve rendere dichiarazione entro 10 gg dall'udienza di comparizione"
+    },
+    {
+      "id": "st_04",
+      "titolo": "Udienza di comparizione delle parti",
+      "giorni": 60,
+      "tipo": "libero",
+      "ancora": "data_pignoramento",
+      "note": "Art. 548 c.p.c. — udienza fissata dal Tribunale (solitamente 30-60 gg dall'iscrizione)"
+    },
+    {
+      "id": "st_05",
+      "titolo": "Istanza di assegnazione del credito",
+      "giorni": 65,
+      "tipo": "libero",
+      "ancora": "data_pignoramento",
+      "note": "Art. 553 c.p.c. — dopo dichiarazione positiva del terzo, il giudice assegna o dispone vendita"
+    }
+  ]
+}

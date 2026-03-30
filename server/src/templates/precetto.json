@@ -1,0 +1,41 @@
+{
+  "id": "precetto",
+  "nome": "Precetto",
+  "descrizione": "Art. 480 c.p.c. — atto prodromico all'esecuzione forzata",
+  "triggerLabel": "Data notifica precetto al debitore",
+  "triggerKey": "data_notifica",
+  "subtasks": [
+    {
+      "id": "st_01",
+      "titolo": "Redazione precetto con intimazione",
+      "giorni": -3,
+      "tipo": "libero",
+      "ancora": "data_notifica",
+      "note": "Art. 480 c.p.c. — il precetto deve contenere: trascrizione del titolo esecutivo (o sua indicazione se notarile), intimazione ad adempiere, avvertimento delle conseguenze."
+    },
+    {
+      "id": "st_02",
+      "titolo": "Notifica precetto a debitore (e garanti)",
+      "giorni": 0,
+      "tipo": "libero",
+      "ancora": "data_notifica",
+      "note": "Art. 480 c.p.c. — notifica a mezzo ufficiale giudiziario o PEC (se ammessa)"
+    },
+    {
+      "id": "st_03",
+      "titolo": "Scadenza termine minimo per adempimento",
+      "giorni": 10,
+      "tipo": "libero",
+      "ancora": "data_notifica",
+      "note": "Art. 482 c.p.c. — non si può iniziare l'esecuzione prima che siano decorsi 10 giorni dalla notifica"
+    },
+    {
+      "id": "st_04",
+      "titolo": "SCADENZA PRECETTO — ultimo giorno per iniziare esecuzione",
+      "giorni": 90,
+      "tipo": "libero",
+      "ancora": "data_notifica",
+      "note": "Art. 481 c.p.c. — il precetto perde efficacia se l'esecuzione non inizia entro 90 giorni dalla notifica"
+    }
+  ]
+}

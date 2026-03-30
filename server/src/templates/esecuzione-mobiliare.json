@@ -1,0 +1,57 @@
+{
+  "id": "esecuzione-mobiliare",
+  "nome": "Esecuzione mobiliare (pignoramento beni mobili)",
+  "descrizione": "Art. 513 ss. c.p.c. — procedura esecutiva su beni mobili del debitore",
+  "triggerLabel": "Data notifica precetto",
+  "triggerKey": "data_precetto",
+  "subtasks": [
+    {
+      "id": "st_01",
+      "titolo": "Notifica precetto al debitore",
+      "giorni": 0,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 480 c.p.c. — il precetto deve contenere l'intimazione ad adempiere entro 10 giorni"
+    },
+    {
+      "id": "st_02",
+      "titolo": "Scadenza termine di adempimento spontaneo",
+      "giorni": 10,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 482 c.p.c. — il precetto perde efficacia se non si procede all'esecuzione entro 90 giorni"
+    },
+    {
+      "id": "st_03",
+      "titolo": "Pignoramento beni mobili presso il debitore",
+      "giorni": 11,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 513 c.p.c. — l'ufficiale giudiziario accede all'abitazione/sede del debitore"
+    },
+    {
+      "id": "st_04",
+      "titolo": "Iscrizione a ruolo e deposito atto pignoramento",
+      "giorni": 15,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 518 co. 6 c.p.c. — deposito entro 15 giorni dal pignoramento, pena inefficacia"
+    },
+    {
+      "id": "st_05",
+      "titolo": "Istanza di vendita o assegnazione",
+      "giorni": 45,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 529 c.p.c. — il creditore procurante deposita istanza di vendita"
+    },
+    {
+      "id": "st_06",
+      "titolo": "Scadenza validità precetto",
+      "giorni": 90,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 481 c.p.c. — dopo 90 giorni il precetto perde efficacia e va rinnovato"
+    }
+  ]
+}

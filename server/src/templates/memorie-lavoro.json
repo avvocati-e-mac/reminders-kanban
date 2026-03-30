@@ -1,0 +1,41 @@
+{
+  "id": "memorie-lavoro",
+  "nome": "Memorie autorizzate (rito del lavoro)",
+  "descrizione": "Art. 420 c.p.c. — memorie dopo ammissione prove",
+  "triggerLabel": "Data udienza di ammissione delle prove",
+  "triggerKey": "data_udienza_prove",
+  "subtasks": [
+    {
+      "id": "st_01",
+      "titolo": "Verifica ordinanza ammissione prove",
+      "giorni": 0,
+      "tipo": "libero",
+      "ancora": "data_udienza_prove",
+      "note": "Il giudice emette ordinanza con i termini per le memorie autorizzate"
+    },
+    {
+      "id": "st_02",
+      "titolo": "Deposito memoria integrativa autorizzata",
+      "giorni": 20,
+      "tipo": "libero",
+      "ancora": "data_udienza_prove",
+      "note": "Art. 420 co. 1 c.p.c. — termine fissato dal giudice, solitamente 20 gg. Indicare capitoli prova testimoniale."
+    },
+    {
+      "id": "st_03",
+      "titolo": "Deposito documenti integrativi",
+      "giorni": 20,
+      "tipo": "libero",
+      "ancora": "data_udienza_prove",
+      "note": "Deposito contestuale alla memoria integrativa"
+    },
+    {
+      "id": "st_04",
+      "titolo": "Udienza istruttoria (assunzione prove)",
+      "giorni": 60,
+      "tipo": "libero",
+      "ancora": "data_udienza_prove",
+      "note": "Udienza fissata dal giudice per audizione testimoni o svolgimento CTU"
+    }
+  ]
+}

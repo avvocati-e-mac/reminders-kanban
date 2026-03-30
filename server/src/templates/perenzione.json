@@ -1,0 +1,49 @@
+{
+  "id": "perenzione",
+  "nome": "Perenzione del processo esecutivo",
+  "descrizione": "Art. 630 c.p.c. (esecuzione) e art. 497 c.p.c. (cautelare) — estinzione per inattività",
+  "triggerLabel": "Data ultimo atto compiuto nel processo",
+  "triggerKey": "data_ultimo_atto",
+  "subtasks": [
+    {
+      "id": "st_01",
+      "titolo": "Data ultimo atto — punto di partenza perenzione",
+      "giorni": 0,
+      "tipo": "libero",
+      "ancora": "data_ultimo_atto",
+      "note": "Registra la data dell'ultimo atto compiuto (es. iscrizione a ruolo, udienza, istanza di vendita)"
+    },
+    {
+      "id": "st_02",
+      "titolo": "ALERT: scadenza perenzione breve (90 giorni)",
+      "giorni": 80,
+      "tipo": "libero",
+      "ancora": "data_ultimo_atto",
+      "note": "Art. 497 c.p.c. (misure cautelari) — 10 giorni prima della scadenza dei 90 gg. Compiere atto interruttivo."
+    },
+    {
+      "id": "st_03",
+      "titolo": "SCADENZA perenzione breve — 90 giorni",
+      "giorni": 90,
+      "tipo": "libero",
+      "ancora": "data_ultimo_atto",
+      "note": "Art. 630 co. 1 c.p.c. — nel processo esecutivo: se nessuna parte compie atti per 90 giorni, il processo si estingue."
+    },
+    {
+      "id": "st_04",
+      "titolo": "ALERT: scadenza perenzione lunga (1 anno)",
+      "giorni": 350,
+      "tipo": "libero",
+      "ancora": "data_ultimo_atto",
+      "note": "Avviso anticipato di 15 giorni prima della scadenza annuale. Verificare se il processo è ancora pendente."
+    },
+    {
+      "id": "st_05",
+      "titolo": "SCADENZA perenzione lunga — 1 anno",
+      "giorni": 365,
+      "tipo": "libero",
+      "ancora": "data_ultimo_atto",
+      "note": "Termine generale di inattività oltre il quale verificare la perenzione del procedimento"
+    }
+  ]
+}

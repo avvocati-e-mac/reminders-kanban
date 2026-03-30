@@ -1,0 +1,65 @@
+{
+  "id": "esecuzione-immobiliare",
+  "nome": "Esecuzione immobiliare (espropriazione forzata)",
+  "descrizione": "Art. 555 ss. c.p.c. — pignoramento di beni immobili",
+  "triggerLabel": "Data notifica precetto",
+  "triggerKey": "data_precetto",
+  "subtasks": [
+    {
+      "id": "st_01",
+      "titolo": "Notifica precetto al debitore",
+      "giorni": 0,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 480 c.p.c. — deve contenere l'intimazione ad adempiere entro 10 giorni"
+    },
+    {
+      "id": "st_02",
+      "titolo": "Atto di pignoramento immobiliare",
+      "giorni": 11,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 555 c.p.c. — notifica al debitore e successiva trascrizione nei Registri Immobiliari"
+    },
+    {
+      "id": "st_03",
+      "titolo": "Trascrizione pignoramento e iscrizione a ruolo",
+      "giorni": 25,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 557 c.p.c. — deposito nota di trascrizione + atto pignoramento entro 15 gg dalla trascrizione"
+    },
+    {
+      "id": "st_04",
+      "titolo": "Deposito istanza di vendita",
+      "giorni": 90,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 567 c.p.c. — entro 120 giorni dal pignoramento pena perenzione (art. 630 c.p.c.)"
+    },
+    {
+      "id": "st_05",
+      "titolo": "Nomina perito estimatore e perizia",
+      "giorni": 150,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 568 c.p.c. — il giudice nomina l'esperto per la stima del valore dell'immobile"
+    },
+    {
+      "id": "st_06",
+      "titolo": "Udienza per autorizzazione vendita / gara telematica",
+      "giorni": 300,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 569 c.p.c. — il giudice fissa modalità e data della vendita (solitamente gara telematica)"
+    },
+    {
+      "id": "st_07",
+      "titolo": "Decreto di trasferimento",
+      "giorni": 400,
+      "tipo": "libero",
+      "ancora": "data_precetto",
+      "note": "Art. 586 c.p.c. — emesso dopo il versamento del prezzo da parte dell'aggiudicatario"
+    }
+  ]
+}
