@@ -41,6 +41,6 @@ app.use((err, _req, res, _next) => {
   res.status(500).json({ error: 'Errore interno del server' });
 });
 
-app.listen(PORT, () => {
-  console.log(`RemindersKanban server avviato su http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`RemindersKanban server avviato su http://0.0.0.0:${PORT}`);
 });
