@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node
+node_modules/
+dist/
+.env
+*.log
+npm-debug.log*
+
+# Swift build
+cli/.build/
+cli/.swiftpm/
+
+# Vite build output
+client/dist/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Binary
+server/bin/reminders-kit
